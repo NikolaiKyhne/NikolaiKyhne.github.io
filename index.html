@@ -63,6 +63,16 @@
 		</div>
 
 </div>
+	        <script>
+          function myFunction(pub_name) {
+              var x = document.getElementById(pub_name);
+              if (x.style.display === 'none') {
+                  x.style.display = 'block';
+              } else {
+                  x.style.display = 'none';
+              }
+        }
+        </script>
 	<div class="container" style="margin-top: 80px">
 		<h2 class="section-title">Publications</h2>
 
@@ -75,18 +85,18 @@
 				<p class="title">Detecting and Defending Against Adversarial Attacks on Automatic Speech Recognition via Diffusion Models</p>
 				<p class="author"><strong> Nikolai Lund Kühne*,</strong>
 					<a href="https://scholar.google.com/citations?user=rNDIWGYAAAAJ&hl=en">Astrid H. F. Kitchen*</a>, 
-					<a href="https://www.linkedin.com/in/marie-saugstrup-jensen-aa409735b/">Marie S. Jensen</a>, 
-					<a href="https://scholar.google.com/citations?user=TzSaaLYAAAAJ&hl=en"> Mikkel S. L. Brøndt</a>,
+					<a href="https://www.linkedin.com/in/marie-saugstrup-jensen-aa409735b/">Marie S. Jensen*</a>, 
+					<a href="https://scholar.google.com/citations?user=TzSaaLYAAAAJ&hl=en"> Mikkel S. L. Brøndt*</a>,
 					<a href="https://scholar.google.com/citations?user=14kTw6QAAAAJ&hl=en"> Martin Gonzalez</a>
 					<a href="https://scholar.google.com/citations?user=CtdqHxkAAAAJ&hl=en"> Christophe Biscio</a>
 					<a href="https://scholar.google.com/citations?user=fugL2E8AAAAJ&hl=en"> Zheng-Hua Tan</a>
 
 				</p>
-				<p class="publish"><em>2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025)</em> <span style="font-style: normal; font-weight: normal; color: black;">*Equal contribution.</span><br></p>
-				<a class="btn" href="https://github.com/NikolaiKyhne/Detecting-and-Defending-Against-Adversarial-Attacks">
-					<i class="fab fa-github"></i>&nbsp Code</a>					
+				<p class="publish"><em>2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025)</em> <span style="font-style: normal; font-weight: normal; color: black;">*Equal contribution.</span><br></p>			
 				<a class="btn" href="https://ieeexplore.ieee.org/document/10890611">
 					<i class="fab fas fa-file-alt"></i>&nbsp Paper</a>
+				<a class="btn" href="https://github.com/NikolaiKyhne/Detecting-and-Defending-Against-Adversarial-Attacks">
+					<i class="fab fa-github"></i>&nbsp Code</a>
 				<p>
 			Automatic speech recognition (ASR) systems are known to be vulnerable to adversarial attacks. This paper addresses detection and defence against targeted white-box attacks on speech signals for ASR systems. While existing work has utilised diffusion models (DMs) to purify adversarial examples, achieving state-of-the-art results in keyword spotting tasks, their effectiveness for more complex tasks such as sentence-level ASR remains unexplored. Additionally, the impact of the number of forward diffusion steps on performance is not well understood. In this paper, we systematically investigate the use of DMs for defending against adversarial attacks on sentences and examine the effect of varying forward diffusion steps. Through comprehensive experiments on the Mozilla Common Voice dataset, we demonstrate that two forward diffusion steps can completely defend against adversarial attacks on sentences. Moreover, we introduce a novel, training-free approach for detecting adversarial attacks by leveraging a pre-trained DM. Our experimental results show that this method can detect adversarial attacks with high accuracy.				</p>
 			</div>

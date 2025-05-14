@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sebastian Loeschcke</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/cv_img.png">
+
+	
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+	<div class="container">
+		<div class="intro">
+			<div class="row">
+				<div class="col-lg-8 is-revealing is-header">
+					<h1 class="name"><strong>Sebastian Loeschcke</strong></h1>
+					<h2 class="lead">Ph.D. Student
+					<br/>Department of Computer Science
+					<br/><a href="https://di.ku.dk/">University of Copenhagen</a> and <a href="https://www.aicentre.dk/">Pioneer Centre for Artificial Intelligence</a></h2>
+				</div>
+				<div class="col-lg-4">
+					<img class="img-fluid" src="images/cv_img.png" alt="alternative" style="max-width: 60%; margin-left: 20%; margin-right: 20%;">
+				</div>
+			</div>
+			<div class="is-revealing is-header">
+				<p>
+					My research focuses on efficient training, using low-rank methods, sparsity, and quantization. <br>
+					I'm advised by <a href="https://scholar.google.com/citations?user=2roUPxkAAAAJ&hl=en">Michael J. Kastoryano</a> and 
+					<a href="https://scholar.google.com/citations?hl=en&user=chD5XxkAAAAJ">Serge Belongie</a>, and funded by the 
+					<a href="https://ddsa.dk/">Danish Data Science Academy (DDSA)</a>. <br>
+					Currently, I am visiting <a href="https://scholar.google.com/citations?user=bEcLezcAAAAJ&hl=en" target="_blank">Anima Anandkumar's</a> <a href="http://tensorlab.cms.caltech.edu/users/anima/" target="_blank"> group</a> at Caltech and collaborating with <a href="https://research.nvidia.com/person/jean-kossaifi" target="_blank">Jean Kossaifi</a> from NVIDIA Research.
+				  </p>
+					
+			</div>
+			<a class="btn is-revealing is-header" href="mailto:sebastianloeschcke@gmail.com"><i class="fab fas fa-envelope"></i>&nbsp email</a>
+			<a class="btn is-revealing is-header" href="https://scholar.google.com/citations?user=_aM-ud8AAAAJ&hl=en"><i class="fa fa-graduation-cap"></i>&nbsp Google Scholar</a>
+			<a class="btn is-revealing is-header" href="https://www.linkedin.com/in/sebastian-loeschcke/"><i class="fab fa-linkedin-in"></i>&nbsp LinkedIn</a>
+			<a class="btn is-revealing is-header" href="https://github.com/sebulo/"><i class="fab fa-github"></i>&nbsp Github</a>
+			<!-- <a class="btn is-revealing is-header" href="data/cv.pdf"><i class="fab fas fa-file-alt"></i>&nbsp Curriculum Vitae</a> -->
+          <a class="btn is-revealing is-header" href="https://twitter.com/sloeschcke"><i class="fab fa-twitter"></i>&nbsp Twitter</a>
+		  <a class="btn is-revealing is-header" href="https://bsky.app/profile/sloeschcke.bsky.social">
+			  <img src="webfonts/bluesky-black.webp" alt="Bluesky" style="width: 16px; height: 16px; vertical-align: middle;">&nbsp Bluesky
+			</a>
+		    <!-- <a class="btn is-revealing is-header" href="https://twitter.com/sloeschcke">
+				<img src="webfonts/twitter-x-logo.png" alt="X" style="width: 16px; height: 16px; vertical-align: middle;">&nbsp
+			</a>
+			 -->
+		</div>
+
+	</div>
+	<!-- BLUE bluesky <a class="btn is-revealing is-header" href="https://bsky.app/profile/sloeschcke.bsky.social"><i class="fab fa-butterfly"></i>&nbsp 🦋 Bluesky</a> -->
+	<!-- <br><br> -->
+  
+	<!-- <br><br> -->
+	<!-- Publications -->
+
+	<div class="container" style="margin-top: 80px">
+		<h2 class="section-title">Publications</h2>
+
+			<!-- New publication entry for LoQT -->
+		<div class="row publication">
+			<div class="col-lg-4">
+				<img id="loqt-image" src="images/loqt_memory_13b_llama2_rank1024.png" alt="LoQT" onmouseover="switchImage('images/loqt.png')" onmouseout="switchImage('images/loqt_memory_13b_llama2_rank1024.png')">
+			</div>
+			<div class="col-lg-8">
+				<p class="title">LoQT: Low-Rank Adapters for Quantized Pre-Training</p>
+				<p class="author"><strong> Sebastian Loeschcke*,</strong>
+					<a href="https://www.linkedin.com/in/mads-toftrup-9ba645111/?originalSubdomain=dk">Mads Toftrup*</a>, 
+					<a href="https://mkastoryano.com/">Michael J. Kastoryano</a>, 
+					<a href="https://sergebelongie.github.io/"> Serge Belongie</a>,
+					<a href="https://vesteinn.is/"> Vésteinn Snæbjarnarson</a>
+				</p>
+				<p class="publish"><em>NeurIPS 2024.</em> <span style="font-style: normal; font-weight: normal; color: black;">*Equal contribution.</span>   <font color="red"><strong>(Best Paper Award)</strong></font> at <a href="https://icml.cc/virtual/2024/workshop/29972" target="_blank">WANT@ICML</a>. <br></p>
+				<a class="btn" href="https://github.com/sebulo/LoQT">
+					<i class="fab fa-github"></i>&nbsp Code</a>					
+				<a class="btn" href="https://arxiv.org/abs/2405.16528">
+					<i class="fab fas fa-file-alt"></i>&nbsp Paper</a>
+				<p>
+					LoQT enables efficient quantized pre-training of LLMs with results close to full-rank non-quantized models. It enables pre-training of a 13B LLM on a 24GB GPU without model parallel, checkpointing, or offloading strategies during training.
+				</p>
+			</div>
+		</div>
+		
+		<script>
+			function switchImage(newSrc) {
+				document.getElementById("loqt-image").src = newSrc;
+			}
+		</script>
+	<br>
+
+	<!-- New publication entry for PuTT -->
+	<div class="row publication">
+		<div class="col-lg-4 text-center">
+			<img src='gifs/putt.gif' style="width:250px; height:auto;" alt="Putt Image">
+		</div>
+	  <div class="col-lg-8">
+		<p class="title">Coarse-To-Fine Tensor Trains for Compact Visual Representations</p>
+		<p class="author">
+		  <strong>Sebastian Loeschcke,</strong>
+		  <a href="https://danalaina.github.io/">Dan Wang</a>,
+		  <a href="https://www.linkedin.com/in/christian-leth-espensen-01bb86208/">Christian Leth-Espensen</a>,
+		  <a href="https://sergebelongie.github.io/">Serge Belongie</a>,
+		  <a href="https://mkastoryano.com/">Michael J. Kastoryano</a>,
+		  <a href="https://sagiebenaim.github.io/">Sagie Benaim</a>
+		</p>
+		<p class="publish"><em>ICML 2024.</em></p>
+		<a class="btn" href="https://sebulo.github.io/PuTT_website/">
+		  <i class="fas fa-globe-asia"></i>&nbsp; Project page</a>
+		<a class="btn" href="https://github.com/sebulo/PuTT">
+		  <i class="fab fa-github"></i>&nbsp; Code</a>
+		<a class="btn" href="https://arxiv.org/abs/2406.04332">
+		  <i class="fas fa-file-alt"></i>&nbsp; Paper</a>
+		<p>
+		  PuTT (Prolongation Upsampling Tensor Train), a method for learning a coarse-to-fine tensor train representation of visual data, excelling in 2D/3D fitting and novel view synthesis, even with noisy or incomplete data.
+		</p>
+	  </div>
+	</div>
+	
+	
+	<br>
+	
+		<div class="row publication">
+			<div class="col-lg-4">
+				<img id="publication-gif" src='gifs/org_swan.gif' onmouseover="changeGif('gifs/cactus_swan.gif')" onmouseout="changeGif('gifs/org_swan.gif')">
+			</div>
+		<div class="col-lg-8">
+			<p class="title">Text-Driven Stylization of Video Objects</p>
+			<p class="author"><strong> Sebastian Loeschcke, </strong>
+				<a href="https://sagiebenaim.github.io/"> Sagie Benaim</a>,
+        		<a href="https://sergebelongie.github.io/"> Serge Belongie</a>
+			</p>
+			<p class="publish">ECCV Workshop on AI for Creative Video Editing and Understanding, 2022. <br> <font color="red"><strong>(Best Paper Award)</strong></font> <font color="green"><strong>(Oral Presentation)</strong></font> </p>
+
+			<a class="btn" href="https://sebulo.github.io/Text-Driven-Stylization-of-Video-Objects/">
+                <i class="fab fas fa-globe-asia"></i>&nbsp Project page</a>
+              <a class="btn" href="https://arxiv.org/abs/2206.12396"> <i class="fab fas fa-file-alt"></i>&nbsp Paper</a>
+              <a class="btn" href="https://youtu.be/b19L96jbfdo">
+                <i class="fab fa-youtube"></i>&nbsp Video summary</a>              
+              <p>
+                A method for stylizing video objects in an intuitive and semantic manner following a user-specified text prompt.
+              </p>
+		</div>
+		
+	</div>
+	<br>
+		<div class="row publication">
+			<div class="col-lg-4">
+				<img src='files/sax_paa_param_viz.gif'>
+			</div>
+			<div class="col-lg-8">
+				<p class="title">Progressive Parameter Space Visualization for Task-Driven SAX Configuration</p>
+				<p class="author"><strong> Sebastian Loeschcke, </strong>
+					<a href="https://github.com/Mahog"> Marius Hogräfer</a>,
+        			<a href="https://cs.au.dk/~hjschulz/"> Hans-Jörg Schulz</a>
+				</p>
+				<p class="publish"><em>EuroVA</em>, 2020.  <font color="green"><strong>(Oral Presentation)</strong></font> </p>
+				<a class="btn" href="https://diglib.eg.org/handle/10.2312/eurova20201085/"> <i class="fab fas fa-file-alt"></i>&nbsp Paper</a>
+				<p>
+					Tool that uses progressive visual analytics to guide users in hyperparameter search for SAX and PAA algorithms.
+				</p>
+			</div>
+		</div>
+	<!-- End of publications -->
+
+	
+	
+	
+<!-- TALKS -->
+<div class="container" style="margin-top: 80px">
+	<h2 class="section-title">Talks</h2>
+	<div class="talk-entry">
+		<p class="talk-description">
+			Invited talk "Low-Rank and Quantized Learning" at <strong>UC Santa Barbara</strong>, hosted by <a href="https://web.ece.ucsb.edu/~zhengzhang/">Zheng Zhang</a>, Mar. 2025.
+		</p>
+	</div>
+	<br>
+	<div class="talk-entry">
+		<p class="talk-description">
+			Invited talk with Serge Belongie for at <strong>NVIDIA Research</strong>, presenting <em>LoQT</em>, hosted by <a href="https://www.linkedin.com/in/georg-zitzlsberger/">Georg Zitzlsberger</a>, Nov. 2024.
+		</p>
+	</div>
+	<br>
+	<div class="talk-entry">
+	  <p class="talk-description">
+		Invited talk at the <strong>D3A 2.0 Conference</strong> (Danish Data Science, Digitalization, and AI), October 23, 2024, on <em>Resource-Aware Machine Learning</em>, hosted by Pinar Tozun and Raghavendra Selvan.
+	  </p>
+	</div>
+	<br>
+	<div class="talk-entry">
+	  <p class="talk-description">
+		Oral presentation at the <strong>ICML Workshop on Advancing Neural Network Training</strong> (<a href="https://icml.cc/virtual/2024/workshop/29972" target="_blank">WANT@ICML</a>), 2024.
+	  </p>
+	</div>
+	<br>
+	<div class="talk-entry">
+	  <p class="talk-description">
+		<a href="https://youtu.be/b19L96jbfdo" target="_blank"><em>Text-Driven Stylization of Video Objects</em></a>, oral presentation at the <strong>ECCV Workshop on AI for Creative Video Editing and Understanding</strong>, Tel Aviv, 2022.
+	  </p>
+	</div>
+	<br>
+	<div class="talk-entry">
+	  <p class="talk-description">
+		<em>Progressive Parameter Space Visualization for Task-Driven SAX Configuration</em>, presented in Norrköping, Sweden, 2020.
+	  </p>
+	</div>
+  </div>
+<!-- Awards -->
+<div class="container" style="margin-top: 80px">
+  <h2 class="section-title">Awards</h2>
+  <div class="award-entry">
+    <p class="talk-description">
+      Best Paper Award at ICML workshop on Advancing Neural Network Training <a href="https://icml.cc/virtual/2024/workshop/29972" target="_blank">WANT@ICML</a>.
+    </p>
+  </div>
+  <br>
+  <div class="award-entry">
+    <p class="talk-description">
+      Best Paper Award, ECCV Workshop on AI for Creative Video Editing and Understanding, Tel Aviv 2022.
+      <a href="https://twitter.com/cveu_workshop/status/1583012665408258048">Twitter post.</a>
+    </p>
+  </div>
+  <br>
+  <div class="award-entry">
+    <p class="talk-description">
+      Queen Margrethe II's travel grant. September 2022.
+      <a href="https://nat.au.dk/en/about-the-faculty/news/show/artikel/masters-students-at-nat-receive-queen-margrethe-iis-travel-grant">News article from Aarhus University.</a>
+    </p>
+  </div>
+  <br>
+  <div class="award-entry">
+    <p class="award-title">
+      Awarded a prestigious <a href="https://ddsa.dk/news/danish-data-science-academy-grants-26-million-dkk-to-16-new-phd-and-postdocs/">Ph.D. scholarship</a> from the
+      <a href="https://ddsa.dk/">Danish Data Science Academy (DDSA)</a>, contributing to the vibrant landscape of data science research.
+    </p>
+  </div>
+</div>
+
+	
+	<br><br><br><br><br><br>
+
+
+	<footer class="container">
+		<span style="font-size: 16px; "> Design inspired by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>
+	</footer>
+
+	<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+	<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+	<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script>
+		function changeGif(newSrc) {
+			const gifElement = document.getElementById("publication-gif");
+			gifElement.src = newSrc;
+		}
+	</script>
+	<!-- <script src="js/animation.js"></script> -->
+
+</body>
+</html>

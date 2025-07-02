@@ -55,6 +55,7 @@
                 <strong><i>Updates</i></strong>
                 <br/>
               </div>
+	      [07/25] Preprint of MambAttention paper released!<br/>
 	      [05/25] Awarded extension of DeiC compute grant with additional resources for the LUMI Supercomputer<br/>
 	      [05/25] First paper of my Ph.D. accepted at <a href="https://www.interspeech2025.org/home">INTERSPEECH 2025</a><br/>
 	      [01/25] Awarded DeiC compute grant for access to the LUMI Supercomputer<br/>
@@ -68,6 +69,36 @@
 
 	<div class="container" style="margin-top: 80px">
 		<h2 class="section-title">Publications</h2>
+	<script>
+			function switchImage1(newSrc) {
+				document.getElementById("mambattention-image").src = newSrc;
+			}
+		</script>
+			<!-- New publication entry for xLSTM-SENet -->
+		<div class="row publication">
+			<div class="col-lg-4">
+				<img id="mambattention-image" src="images/mambattention.jpg" alt="xlstm" onmouseover="switchImage1('images/mambattention_tsne.jpg')" onmouseout="switchImage1('images/mambattention.jpg')">
+			</div>
+			<div class="col-lg-8">
+				<p class="title">MambAttention: Mamba with Multi-Head Attention for Generalizable Single-Channel Speech Enhancement</p>
+				<p class="author"><strong> Nikolai Lund Kühne,</strong>
+					<a href="https://scholar.google.com/citations?user=TUhg0mwAAAAJ&hl=en"> Jesper Jensen </a>, 
+					<a href="https://scholar.google.com/citations?user=P7rpiNUAAAAJ&hl=en"> Jan Østergaard </a>,
+					<a href="https://scholar.google.com/citations?user=fugL2E8AAAAJ&hl=en"> Zheng-Hua Tan </a>
+
+				</p>
+				<p class="publish"><em>Preprint</em><br></p>			
+				<a class="btn" href="https://arxiv.org/pdf/2507.00966v1">
+					<i class="fab fas fa-file-alt"></i>&nbsp Paper</a>
+				<a class="btn" href="https://github.com/NikolaiKyhne/MambAttention">
+					<i class="fab fa-github"></i>&nbsp Code</a>
+				<p>
+		MambAttention significantly outperforms state-of-the-art single-channel speech enhancement systems on out-of-domain datasets. t-SNE plots reveal that our shared multi-head attention module encourages the model to learn dataset-invariant features. </div>
+		</div>
+		
+
+	<br>
+		
 		<script>
 			function switchImage1(newSrc) {
 				document.getElementById("xlstm-image").src = newSrc;
